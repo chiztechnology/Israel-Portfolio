@@ -13,11 +13,11 @@ To get a local copy, follow these simple example steps.
 
 Clone this repository or download the Zip folder:
 
-git clone https://github.com/chiztechnology/Israel-Portfolio
+`git clone https://github.com/chiztechnology/Israel-Portfolio`
 
 Navigate to the location of the folder in your machine:
 
-you@your-Pc-name:~$ cd <folder>
+`you@your-Pc-name:~$ cd <folder>`
 Press Enter to navigate to your local clone.
 
 
