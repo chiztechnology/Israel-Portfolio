@@ -278,13 +278,13 @@ header {
 
 .view-project-button:hover {
   background-color: #6070ff;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
- }
- 
- .view-project-text:hover {
+}
+
+.view-project-text:hover {
   color: #fff;
- }
+}
 
 .about-myself-section {
   margin: 0;
@@ -356,7 +356,7 @@ header {
 
 .get-resume-button:hover {
   background-color: #6070ff;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
 }
 
