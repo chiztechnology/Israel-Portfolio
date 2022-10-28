@@ -109,12 +109,11 @@ header {
 
 .works-section {
   background: #f4f3f3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 114px;
+  display: grid;
+  justify-content: center;
   width: 375px;
   height: 2800px;
+  margin-top: 114px;
   padding-bottom: 80px;
 }
 
@@ -122,9 +121,7 @@ header {
   margin-top: 114px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding: 16px;
-  /* gap: 12px; */
   width: 302px;
   height: 552px;
   background: #FFFFFF;
@@ -153,7 +150,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0px;
-  /* gap: 12px; */
   width: 236px;
   height: 32px;
 }
@@ -352,7 +348,6 @@ header {
 .languages-container{
   margin-top: 40px;
   padding: 50px 50px 0 50px;
-  /* padding: 50px; */
 }
 
 .languages-header{
@@ -362,12 +357,12 @@ header {
 }
 
 .languages-title{
-height: 24px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
+  height: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .languages-li-div{
@@ -405,4 +400,12 @@ line-height: 24px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid gray;
+}
+
+.about-ul-category{
+  padding: 0px;
+}
+
+.about-li-category{
+  list-style-type: none;
 }
