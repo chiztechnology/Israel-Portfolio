@@ -133,10 +133,11 @@ header {
   height: 220px;
   border-radius: 8px;
 }
+
 .work-title {
   width: 295px;
   height: 18px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -148,7 +149,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0px;
+  padding: 0;
   width: 236px;
   height: 32px;
 }
@@ -156,7 +157,7 @@ header {
 .frame-subtitle {
   width: 55px;
   height: 16px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -167,7 +168,7 @@ header {
 .skills-description {
   width: 295px;
   height: 76px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 15px;
@@ -178,7 +179,7 @@ header {
 .skills-ul {
   list-style-type: none;
   display: flex;
-  padding:0;
+  padding: 0;
 }
 
 .skills-container-1 {
@@ -214,7 +215,7 @@ header {
 }
 
 .skills-item {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -224,15 +225,16 @@ header {
 }
 
 .position-title {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
 }
+
 .work-year {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -264,7 +266,7 @@ header {
 .view-project-text {
   width: 124px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -298,7 +300,7 @@ header {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .about-description {
@@ -312,13 +314,13 @@ header {
   color: #344563;
   padding-left: 24px;
   padding-right: 24px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .get-resume-text {
   width: 160px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -341,7 +343,7 @@ header {
   width: 140px;
   height: 28px;
   border: 1px solid #6070ff;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .languages-container {
@@ -357,7 +359,7 @@ header {
 
 .languages-title {
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -386,7 +388,7 @@ header {
 .each-language-text {
   padding-left: 15px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -402,7 +404,7 @@ header {
 }
 
 .about-ul-category {
-  padding: 0px;
+  padding: 0;
 }
 
 .about-li-category {
