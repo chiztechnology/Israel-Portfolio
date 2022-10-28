@@ -43,7 +43,6 @@ header {
 
 .intro-section {
   background: url('img/header-shapes mobile.png');
-  width: 462px;
   height: 470px;
   border-bottom-left-radius: 80px;
 }
@@ -277,6 +276,16 @@ header {
   color: #396df2;
 }
 
+.view-project-button:hover {
+  background-color: #6070ff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+ }
+ 
+ .view-project-text:hover {
+  color: #fff;
+ }
+
 .about-myself-section {
   margin: 0;
   width: 375px;
@@ -343,6 +352,16 @@ header {
   height: 28px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+}
+
+.get-resume-button:hover {
+  background-color: #6070ff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+}
+
+.get-resume-text:hover {
+  color: #fff;
 }
 
 .languages-container {
