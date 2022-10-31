@@ -177,8 +177,12 @@ header {
 
 .skills-ul {
   list-style-type: none;
-  display: flex;
   padding: 0;
+
+}
+
+.skills-list{
+  float: left;
 }
 
 .skills-container-1 {
