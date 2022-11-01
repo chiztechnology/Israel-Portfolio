@@ -3,7 +3,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f7f5f5;
+  background-color: #fff;
 }
 
 .main-div {
@@ -177,8 +177,12 @@ header {
 
 .skills-ul {
   list-style-type: none;
-  display: flex;
   padding: 0;
+  margin-bottom: 1.5cm;
+}
+
+.skills-list {
+  float: left;
 }
 
 .skills-container-1 {
@@ -427,4 +431,119 @@ header {
 
 .about-li-category {
   list-style-type: none;
+}
+
+.contact-section {
+  background-color: #6070ff;
+  background-image: url('img/contact\ form\ shapes-mobile.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  border-top-left-radius: 80px;
+  height: 860px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contact {
+  padding-top: 2cm;
+  padding-left: 1.5cm;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contact-text {
+  width: 327px;
+  height: 140px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+.contact-form {
+  width: 325px;
+}
+
+.name {
+  border-radius: 5px;
+  border-color: transparent;
+  height: 48px;
+  width: 298px;
+  margin: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  align-items: center;
+  color: #172b4d;
+  padding-left: 10px;
+}
+
+.email {
+  border-radius: 5px;
+  border-color: transparent;
+  height: 48px;
+  width: 298px;
+  margin: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: 'normal';
+  font-weight: 200;
+  align-items: center;
+  color: #172b4d;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.text-box {
+  border-radius: 5px;
+  border-color: transparent;
+  height: 170px;
+  width: 298px;
+  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  align-items: center;
+  color: #172b4d;
+  padding: 10px;
+}
+
+.button-contact {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 140px;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  border-color: transparent;
+}
+
+.button-contact:hover {
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
+  border-color: #fff;
 }
