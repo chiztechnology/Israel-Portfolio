@@ -281,13 +281,16 @@
             </section>
             <section class="contact-section">
                 <h4 class="contact">Contact me</h4>
-                <p class="contact-text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-                <input placeholder="name" class="name">
-                <input placeholder="email" class="email">
-                <input placeholder="write your message here" class="text-box">
-                <button class="button-contact">Get in touch </button>
+                <p class="contact-text">If you have an application you are interested in developing, a feature that you
+                    need built or a project that needs coding. I’d love to help with it </p>
+                <form action="https://formspree.io/f/mbjbpybo" method="post" class="contact-form">
+                    <input placeholder="name" class="name" max="30" name="name" required>
+                    <input placeholder="email" class="email" name="email" required>
+                    <textarea name="message" id="message" cols="30" rows="10" maxlength="500" class="text-box"
+                        placeholder="write your message here"></textarea>
+                    <button class="button-contact" type="submit">Get in touch </button>
+                </form>
             </section>
-
         </main>
         <!--  headline ends -->
     </div>
