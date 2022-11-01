@@ -292,7 +292,7 @@ header {
 }
 
 .about-myself-section {
-  margin: 0;
+  margin: 0cm;
   width: 375px;
   height: 1263px;
   background: #fff;
@@ -432,4 +432,69 @@ header {
 
 .about-li-category {
   list-style-type: none;
+}
+
+.contact-section {
+  background-image: url(img/blue\ square.png);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+padding-top: 2cm;
+padding-left: 1.5cm;
+text-align: center;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+display: flex;
+color: #FFFFFF;
+}
+
+.contact-text {
+width: 327px;
+height: 140px;
+padding-left: 0.5cm;
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #EBEBFF;
+}
+
+.name {
+  border-radius: 5px;
+  border-color:transparent;
+  height: 1cm;
+  margin: 0.5cm;
+  font-family: 'Poppins';
+font-style: normal;
+align-items: center;
+color: #172B4D;
+}
+
+.email {
+  border-radius: 5px;
+  border-color:transparent;
+  height: 1cm;
+  margin: 0.5cm;
+  font-family: 'Poppins';
+font-style: normal;
+align-items: center;
+color: #172B4D;
+}
+
+.text-box {
+  border-radius: 5px;
+  border-color:transparent;
+  height: 1cm;
+  margin: 0.5cm;
+  font-family: 'Poppins';
+font-style: normal;
+align-items: center;
+color: #172B4D;
 }
