@@ -104,6 +104,22 @@ header {
   list-style-type: none;
   align-items: center;
   padding-left: 16px;
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+   margin-left: 100%;
+   justify-content: space-between;
+   width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    justify-content: space-between;
+    width: 65%;
+  }
 }
 
 .link {
