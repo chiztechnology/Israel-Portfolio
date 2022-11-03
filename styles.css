@@ -104,6 +104,22 @@ header {
   list-style-type: none;
   align-items: center;
   padding-left: 16px;
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    justify-content: space-between;
+    width: 65%;
+  }
 }
 
 .link {
@@ -263,7 +279,7 @@ header {
   margin-top: 10px;
   width: 140px;
   height: 48px;
-  background: #fff;
+  background-color: #fff;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -276,6 +292,7 @@ header {
   color: #6070ff;
   border-color: transparent;
   border-color: #6070ff;
+  transition: background-color 1s, color 1s, ease-in-out;
 }
 
 .view-project-button:hover {
@@ -356,6 +373,7 @@ header {
   height: 28px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  transition: background-color 1s, color 1s, ease-in-out;
 }
 
 .get-resume-button:hover {
@@ -539,6 +557,7 @@ header {
   color: #6070ff;
   border-color: transparent;
   border-color: #6070ff;
+  transition: background-color 1s, color 1s, ease-in-out;
 }
 
 .button-contact:hover {
