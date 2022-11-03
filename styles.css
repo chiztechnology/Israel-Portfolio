@@ -40,6 +40,14 @@ header {
   padding-right: 20px;
 }
 
+.nav-url {
+  display: none;
+}
+
+.wide-nav {
+  padding-right: 10px;
+}
+
 .intro-section {
   background: url('img/header-shapes mobile.png');
   background-repeat: no-repeat;
@@ -251,31 +259,31 @@ header {
 }
 
 .view-project-button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-  position: absolute;
-  width: 101px;
-  height: 28px;
-  border: 1px solid #6070ff;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 140px;
+  height: 48px;
+  background: #fff;
   border-radius: 8px;
-}
-
-.view-project-text {
-  width: 124px;
-  height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #396df2;
+  color: #6070ff;
+  border-color: transparent;
+  border-color: #6070ff;
+}
+
+.view-project-button:hover {
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
+  border-color: #fff;
 }
 
 .view-project-button:hover {
@@ -536,6 +544,7 @@ header {
   letter-spacing: 0.03em;
   color: #6070ff;
   border-color: transparent;
+  border-color: #6070ff;
 }
 
 .button-contact:hover {
@@ -562,8 +571,30 @@ header {
     align-items: center;
   }
 
-  .header {
-    width: 1400px;
+  header {
+    width: 100%;
+  }
+
+  .wide-nav {
+    padding-right: 120px;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .nav-url {
+    display: inline;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+    text-decoration-line: none;
+    padding-right: 12px;
   }
 
   .hamburger {
@@ -620,6 +651,10 @@ header {
   }
 
   .cards-work div {
+    margin-left: 0;
+  }
+
+  .work-title {
     margin-left: 40px;
   }
 
@@ -633,10 +668,25 @@ header {
   }
 
   .frame-2 {
-    width: 289px;
+    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
+    padding-left: 40px;
+    width: 286px;
+    height: 32px;
+    margin-left: 40px;
+  }
+
+  .skills-description {
+    margin-left: 40px;
+  }
+
+  .skills-ul {
+    margin-left: 40px;
+  }
+
+  .skills-list {
+    padding-right: 20px;
   }
 
   .about-myself-section {
@@ -704,8 +754,24 @@ header {
     background-image: url('img/contact\ form\ background\ shapes\ LARGE.svg');
   }
 
-  /* .contact-section div {
-    
-  } */
+  .view-project-button {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 140px;
+    height: 48px;
+    background: #fff;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    border-color: transparent;
+    border-color: #6070ff;
+  }
 
 }
