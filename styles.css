@@ -7,13 +7,13 @@ body {
 }
 
 .main-div {
-  width: 375px;
+  width: 100%;
   height: 100vh;
   background: #fff;
 }
 
 header {
-  width: 375px;
+  width: 100%;
   height: 48px;
   display: flex;
   justify-content: space-between;
@@ -50,7 +50,9 @@ header {
 
 .intro-section {
   background: url('img/header-shapes mobile.png');
+  background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
   height: 470px;
   border-bottom-left-radius: 80px;
 }
@@ -131,7 +133,7 @@ header {
   background: #f4f3f3;
   display: grid;
   justify-content: center;
-  width: 375px;
+  width: 100%;
   height: 2800px;
   margin-top: 114px;
   padding-bottom: 80px;
@@ -570,15 +572,15 @@ header {
 
 @media only screen and (min-width: 768px) {
   body {
-    width: 1440px;
+    width: 100%;
   }
 
   .main-div {
-    width: 1440px;
+    width: 100%;
   }
 
   .main-div main {
-    width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -617,7 +619,7 @@ header {
   .intro-section {
     background: url('img/Header\ bg\ desktop\ version.svg');
     background-repeat: no-repeat;
-    width: 1440px;
+    width: 100%;
     border-bottom-left-radius: 80px;
     display: flex;
     flex-direction: column;
@@ -652,7 +654,7 @@ header {
   }
 
   .cards-work {
-    width: 1156px;
+    width: 95%;
     height: 552px;
     margin-top: 114px;
     display: flex;
@@ -677,7 +679,7 @@ header {
   }
 
   .skills-description {
-    width: 496px;
+    width: 80%;
     margin-left: 40px;
   }
 
@@ -701,7 +703,7 @@ header {
 
   .about-myself-section {
     margin: 0;
-    width: 1440px;
+    width: 100%;
     height: 924px;
     background: #fff;
     border-top-right-radius: 80px;
@@ -759,7 +761,7 @@ header {
   }
 
   .contact-section {
-    width: 1440px;
+    width: 100%;
     align-items: center;
     background-image: url('img/contact\ form\ background\ shapes\ LARGE.svg');
   }
