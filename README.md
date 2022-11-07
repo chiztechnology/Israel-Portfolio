@@ -13,7 +13,6 @@ Click on the link bellow [or copy it and paste in your browser] to see my portfo
 
 `https://chiztechnology.github.io/Israel-Portfolio/`
 
-
 Please follow the instructions to clone my repository in your computer
 
 To get a local copy, follow these simple example steps.
