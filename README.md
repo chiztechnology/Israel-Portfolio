@@ -9,7 +9,7 @@ CSS
 
 # Getting Started
 
-Click on the link bellow [or copy it and paste in your browser] to see my portfolio
+Click on the link below [or copy it and paste in your browser] to see my portfolio
 
 `https://chiztechnology.github.io/Israel-Portfolio/`
 
