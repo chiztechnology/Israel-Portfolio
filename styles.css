@@ -6,6 +6,10 @@ body {
   background-color: #fff;
 }
 
+.form-label {
+  visibility: hidden;
+}
+
 .main-div {
   width: 100%;
   height: 100vh;
@@ -501,6 +505,7 @@ header {
   height: 48px;
   width: 298px;
   margin: 10px;
+  margin-bottom: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -523,6 +528,8 @@ header {
   margin-left: 10px;
   margin-right: 10px;
   padding-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .text-box {
@@ -539,6 +546,7 @@ header {
   align-items: center;
   color: #172b4d;
   padding: 10px;
+  margin-top: 0;
 }
 
 .button-contact {
@@ -785,4 +793,5 @@ header {
     border-color: transparent;
     border-color: #5867eb;
   }
+
 }
