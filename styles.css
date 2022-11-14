@@ -4,6 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  scroll-behavior: smooth;
 }
 
 .mobile-menu-drawer {
