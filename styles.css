@@ -577,7 +577,6 @@ header {
   width: 298px;
   margin: 10px;
   font-family: 'Poppins', sans-serif;
-  font-style: 'normal';
   font-weight: 200;
   align-items: center;
   color: #172b4d;
@@ -853,5 +852,4 @@ header {
     border-color: transparent;
     border-color: #5867eb;
   }
-
 }
