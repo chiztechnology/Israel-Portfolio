@@ -19,18 +19,17 @@ body {
   bottom: 0px;
   display: flex;
   flex-direction: column;
+  transition: visibility 1s, ease-in-out;
 }
 
 .mobile-menu-drawer-nav {
   margin-top: 70px;
   width: 100%;
   height: 100vh;
-
 }
 
 .mobile-drawer-ul{
   list-style-type: none;
-  
 }
 
 .drawer-nav-url {
@@ -45,9 +44,6 @@ body {
 }
 
 .mobile-drawer-close-icon {
- /* margin-left: 50px; */
- /* float: left; */
- /* justify-content: flex-end; */
  position: absolute;
  top:30px;
  right: 20px;
@@ -59,6 +55,10 @@ body {
 }
 .mobile-drawer-li {
   margin-bottom: 30px;
+}
+
+#works-section #about-myself-section #contact-section {
+  scroll-behavior: smooth; 
 }
 
 .form-label {
