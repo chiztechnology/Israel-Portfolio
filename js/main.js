@@ -5,21 +5,21 @@ document.getElementById('hamburger').addEventListener('click', (e) => {
 });
 
 // click on Close hamburger
-document.getElementById('mobile-drawer-close-icon').addEventListener('click', (e) => {
+document.getElementById('mobile-drawer-close-icon').addEventListener('click', () => {
   document.querySelector('.mobile-menu-drawer').setAttribute('style', 'visibility: hidden');
 });
 
 // click on portfolio
-document.getElementById('drawer-nav-url').addEventListener('click', (e) => {
+document.getElementById('drawer-nav-url').addEventListener('click', () => {
   document.querySelector('.mobile-menu-drawer').setAttribute('style', 'visibility:hidden');
 });
 
 // click on about section menu
-document.getElementById('drawer-nav-url2').addEventListener('click', (e) => {
+document.getElementById('drawer-nav-url2').addEventListener('click', () => {
   document.querySelector('.mobile-menu-drawer').setAttribute('style', 'visibility:hidden');
 });
 
 // click on contact
-document.getElementById('drawer-nav-url3').addEventListener('click', (e) => {
+document.getElementById('drawer-nav-url3').addEventListener('click', () => {
   document.querySelector('.mobile-menu-drawer').setAttribute('style', 'visibility:hidden');
 });
