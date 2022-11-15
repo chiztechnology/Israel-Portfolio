@@ -7,6 +7,10 @@ body {
   scroll-behavior: smooth;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .mobile-menu-drawer {
   visibility: hidden;
   position: absolute;
