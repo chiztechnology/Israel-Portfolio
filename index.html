@@ -20,13 +20,32 @@
             <a href="#" class="logo">My Logo</a>
             <!-- wide & mobile format nav -->
             <nav class="wide-nav">
-                <a href="#"><img src="img/hamburger.png" alt="hamburger icon" class="hamburger"></a>
-                <a href="#" class="nav-url">Portfolio</a>
-                <a href="#" class="nav-url">About</a>
-                <a href="#" class="nav-url">Contact</a>
+                <a href="#" id="hamburger"><img src="img/hamburger.png" alt="hamburger icon" class="hamburger"></a>
+                <a href="#works-section" class="nav-url">Portfolio</a>
+                <a href="#about-myself-section" class="nav-url">About</a>
+                <a href="#contact-section" class="nav-url">Contact</a>
             </nav>
+
+            <!-- mobile menu drawer -->
+            <div class="mobile-menu-drawer">
+                <a href="#" class="mobile-drawer-close-icon" id="mobile-drawer-close-icon">
+                    <img src="img/Icon - Cancel.png" alt="exit icon" class="exit-icon">
+                </a>
+                <nav class="mobile-menu-drawer-nav">
+                    <ul class="mobile-drawer-ul">
+                        <li class="mobile-drawer-li">
+                            <a href="#works-section" class="drawer-nav-url" id="drawer-nav-url">Portfolio</a>
+                        </li>
+                        <li class="mobile-drawer-li">
+                            <a href="#about-myself-section" class="drawer-nav-url" id="drawer-nav-url2">About</a>
+                        </li>
+                        <li class="mobile-drawer-li">
+                            <a href="#contact-section" class="drawer-nav-url" id="drawer-nav-url3">Contact</a>
+                        </li>           
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <!--  toolbar ends -->
 
         <!--  headline starts -->
         <main>
@@ -55,7 +74,7 @@
                 </ul>
             </section>
             <!-- works start here -->
-            <section class="works-section">
+            <section class="works-section" id="works-section">
                 <!-- first card -->
                 <div class="cards-work">
                     <img src="img/tonic-work.jpg" alt="portfolio project image" class="cards-img">
@@ -203,7 +222,7 @@
             </section>
             <!-- works end here -->
             <!-- About my self section -->
-            <section class="about-myself-section">
+            <section class="about-myself-section" id="about-myself-section">
                 <div class="about-myself-sub-container">
                     <h2 class="about-header">About Myself</h2>
                     <p class="about-description">Hello I’m a software developer! I can help you build a product ,
@@ -286,7 +305,7 @@
                 </div>
 
             </section>
-            <section class="contact-section">
+            <section class="contact-section" id="contact-section">
                 <div>
                     <h2 class="contact">Contact me</h2>
                     <p class="contact-text">If you have an application you are interested in developing, a feature that
@@ -308,6 +327,7 @@
         </main>
         <!--  headline ends -->
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
