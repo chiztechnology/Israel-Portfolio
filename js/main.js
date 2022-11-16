@@ -25,7 +25,7 @@ document.getElementById('drawer-nav-url3').addEventListener('click', () => {
 });
 
 var modal = document.getElementById("modal");
-var btn = document.getElementById("showModal");
+var btn = document.querySelector(".showModal");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];

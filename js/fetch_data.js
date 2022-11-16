@@ -69,7 +69,7 @@ window.onload = () => {
       "<ul class=\"skills-ul\">" +
         return_skills(p.skills) +
       "</ul>" +
-      "<button class=\"view-project-button\">See Project</button>" +
+      "<button class=\"view-project-button\" id=\"showModal\">See Project</button>" +
       "</div>" +
       "</div>";
   })
