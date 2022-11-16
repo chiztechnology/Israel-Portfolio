@@ -857,3 +857,120 @@ header {
     border-color: #5867eb;
   }
 }
+
+/* The Modal (background) */
+.modal {
+  display: block;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  padding-top: 0;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 1rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  /* float: right; */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cards-work-preview {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 302px;
+  height: 552px;
+  background: #fff;
+  /* border: 1px solid #dfe1e6; */
+  border-radius: 16px;
+}
+
+.card-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-title-preview {
+  /* width: 295px;*/
+  height: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+}
+
+.footer-popup {
+  width: 100%;
+  border-top-color: #6070ff;
+  border-top-width: 1px;
+  border-top-style: solid;
+  display: flex;
+  padding-top: 12px;
+  padding-right: 20px;
+}
+
+.footer-popup-button {
+  /* width: 160px; */
+  height: 42px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  border-color: #6070ff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 22px;
+  margin-right: 10px;
+}
+
+.footer-button-title {
+  width: 58px;
+  width: 90px;
+  height: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #396DF2;
+}
