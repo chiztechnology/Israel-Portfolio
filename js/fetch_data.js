@@ -86,8 +86,8 @@ projects.forEach((p) => {
 const btn = document.querySelectorAll('.openProject');
 let wrapper = null;
 
-function showModal(obj){  
-  if (wrapper !== null){
+function showModal(obj) {  
+  if (wrapper !== null) {
     document.body.removeChild(wrapper);
     // document.getElementById('modal').remove();
   }
