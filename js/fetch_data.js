@@ -48,8 +48,8 @@ const projects = [
   },
 ];
 
-function return_skills(array) {
-  let value = "";
+function returnSkills(array) {
+  let value = '';
   for (let i = 0; i < array.length; i++) {
     value += `<li class="skills-list first-element">
       <div class="skills-container-${(i + 1)}">
@@ -76,7 +76,7 @@ projects.forEach((p) => {
            ${p.description}
         </p>
         <ul class="skills-ul">
-            ${return_skills(p.skills)}
+            ${returnSkills(p.skills)}
         </ul>
         <button class="view-project-button openProject" id="${p.id}">See Project</button>
     </div>
@@ -85,8 +85,7 @@ projects.forEach((p) => {
 
 let btn = document.querySelectorAll(`.openProject`);
 
-function _showModal(obj) {
-
+function showModal(obj) {
   if (document.getElementById('modal') !== null) {
     document.getElementById('modal').remove();
   }
@@ -117,7 +116,7 @@ function _showModal(obj) {
                                 </p>
                                 <div class="skills-and-footer-body">
                                     <ul class="skills-ul-preview">
-                                        ${return_skills(obj.skills)}
+                                        ${returnSkills(obj.skills)}
                                     </ul>
         
                                     <div class="footer-popup">
@@ -141,31 +140,27 @@ function _showModal(obj) {
                 </div>
             </div>`;
 
-  let modal = document.getElementById('modal');
+  const modal = document.getElementById('modal');
   modal.style.display = 'block';
   // // Get the <span> element that closes the modal
-  let span = document.getElementsByClassName('close')[0];
+  const span = document.getElementsByClassName('close')[0];
 
   // // When the user clicks on <span> (x), close the modal
-  span.onclick = function () {
+  span.onclick =  ()=>{
     modal.style.display = 'none';
-  }
+  };
 
   window.onclick = (event) => {
-    if (event.target == document.getElementById('modal')) {
+    if (event.target === document.getElementById('modal')) {
       modal.style.display = 'none';
     }
-  }
-
+  };
 }
 
-btn.forEach(node => {
-  console.log(node);
+btn.forEach((node) => {
   node.addEventListener('click', (e) => {
-    // console.log("Click on node element ", node.id)
-    var item = projects.find(item => item.id === parseInt(node.id));
-    // console.log(item);
-    _showModal(item);
+    let item = projects.find((item) => (item.id === parseInt(node.id, radix)));
+    showModal(item);
     e.preventDefault();
-  })
-})
+  });
+});
