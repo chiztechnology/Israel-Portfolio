@@ -53,7 +53,7 @@ function returnSkills(array) {
   for (let i = 0; i < array.length; i += 1) {
     value += `<li class="skills-list first-element">
       <div class="skills-container-${(i + 1)}">
-      <h4 class="skills-item">${array[i]} "</h4>
+      <h4 class="skills-item">${array[i]}</h4>
       </div>
       </li>`;
   }
