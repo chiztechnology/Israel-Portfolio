@@ -50,12 +50,12 @@ const projects = [
 
 function returnSkills(array) {
   let value = '';
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i+=1) {
     value += `<li class="skills-list first-element">
       <div class="skills-container-${(i + 1)}">
       <h4 class="skills-item">${array[i]} "</h4>
       </div>
-      </li>`
+      </li>`;
   }
   return value;
 }
@@ -83,7 +83,7 @@ projects.forEach((p) => {
 </div>`;
 });
 
-let btn = document.querySelectorAll(`.openProject`);
+const btn = document.querySelectorAll('.openProject');
 
 function showModal(obj) {
   if (document.getElementById('modal') !== null) {
@@ -146,7 +146,7 @@ function showModal(obj) {
   const span = document.getElementsByClassName('close')[0];
 
   // // When the user clicks on <span> (x), close the modal
-  span.onclick =  ()=>{
+  span.onclick = () => {
     modal.style.display = 'none';
   };
 
@@ -159,7 +159,7 @@ function showModal(obj) {
 
 btn.forEach((node) => {
   node.addEventListener('click', (e) => {
-    let item = projects.find((item) => (item.id === parseInt(node.id, radix)));
+    const item = projects.find((item) => (item.id === parseInt(node.id, 10)));
     showModal(item);
     e.preventDefault();
   });
