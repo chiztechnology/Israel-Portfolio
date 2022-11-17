@@ -9,7 +9,7 @@ const projects = [
     skills: ['html', 'css', 'javascript'],
     img: 'tonic-work.jpg',
     source_code: 'https://github.com/chiztechnology/Israel-Portfolio/',
-    live_version: 'https://chiztechnology.github.io/Israel-Portfolio/'
+    live_version: 'https://chiztechnology.github.io/Israel-Portfolio/',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const projects = [
     skills: ['html', 'css', 'javascript'],
     img: 'Snapshoot Portfolio.png',
     source_code: 'https://github.com/chiztechnology/Israel-Portfolio/',
-    live_version: 'https://chiztechnology.github.io/Israel-Portfolio/'
+    live_version: 'https://chiztechnology.github.io/Israel-Portfolio/',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const projects = [
     skills: ['html', 'css', 'javascript'],
     img: 'Snapshoot Portfolio (1).png',
     source_code: 'https://github.com/chiztechnology/Israel-Portfolio/',
-    live_version: 'https://chiztechnology.github.io/Israel-Portfolio/'
+    live_version: 'https://chiztechnology.github.io/Israel-Portfolio/',
   }, {
     id: 4,
     title: 'Multi-post Stories',
@@ -44,12 +44,24 @@ const projects = [
     skills: ['html', 'css', 'javascript'],
     img: 'Snapshoot Portfolio (2).png',
     source_code: 'https://github.com/chiztechnology/Israel-Portfolio/',
-    live_version: 'https://chiztechnology.github.io/Israel-Portfolio/'
+    live_version: 'https://chiztechnology.github.io/Israel-Portfolio/',
   },
 ];
 
+function return_skills(array) {
+  let value = "";
+  for (let i = 0; i < array.length; i++) {
+    value += `<li class="skills-list first-element">
+      <div class="skills-container-${(i + 1)}">
+      <h4 class="skills-item">${array[i]} "</h4>
+      </div>
+      </li>`
+  }
+  return value;
+}
+
 projects.forEach((p) => {
-  document.getElementById("works-section").innerHTML += `<div class="cards-work">
+  document.getElementById('works-section').innerHTML += `<div class="cards-work">
     <img src="img/${p.img}" alt="portfolio project image" class="cards-img">
     <div>
         <h2 class="work-title">${p.title}</h2>
@@ -71,38 +83,15 @@ projects.forEach((p) => {
 </div>`;
 });
 
-function return_skills(array) {
-  let value = "";
-  for (let i = 0; i < array.length; i++) {
-    value += `<li class="skills-list first-element">
-      <div class="skills-container-${(i + 1)}">
-      <h4 class="skills-item">${array[i]} "</h4>
-      </div>
-      </li>`
-  }
-  return value;
-}
-
-var btn = document.querySelectorAll(`.openProject`);
-
-btn.forEach(node => {
-  console.log(node);
-  node.addEventListener("click", (e) => {
-    // console.log("Click on node element ", node.id)
-    var item = projects.find(item => item.id === parseInt(node.id));
-    // console.log(item);
-    _showModal(item);
-    e.preventDefault();
-  })
-})
+let btn = document.querySelectorAll(`.openProject`);
 
 function _showModal(obj) {
 
-  if (document.getElementById("modal") !== null) {
-    document.getElementById("modal").remove();
+  if (document.getElementById('modal') !== null) {
+    document.getElementById('modal').remove();
   }
 
-  document.getElementById("works-section").innerHTML += `
+  document.getElementById('works-section').innerHTML += `
   <div class="modal" id="modal" tabindex="-1">
                 <!-- Modal content -->
                 <div class="modal-content">
@@ -152,20 +141,31 @@ function _showModal(obj) {
                 </div>
             </div>`;
 
-  var modal = document.getElementById("modal");
-  modal.style.display = "block";
+  let modal = document.getElementById('modal');
+  modal.style.display = 'block';
   // // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+  let span = document.getElementsByClassName('close')[0];
 
   // // When the user clicks on <span> (x), close the modal
   span.onclick = function () {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
 
   window.onclick = (event) => {
-    if (event.target == document.getElementById("modal")) {
-      modal.style.display = "none";
+    if (event.target == document.getElementById('modal')) {
+      modal.style.display = 'none';
     }
   }
 
 }
+
+btn.forEach(node => {
+  console.log(node);
+  node.addEventListener('click', (e) => {
+    // console.log("Click on node element ", node.id)
+    var item = projects.find(item => item.id === parseInt(node.id));
+    // console.log(item);
+    _showModal(item);
+    e.preventDefault();
+  })
+})

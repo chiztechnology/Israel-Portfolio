@@ -981,7 +981,6 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-
   .modal-content {
     width: 70%;
   }
@@ -1053,7 +1052,7 @@ header {
     width: 58px;
     width: 90px;
     height: 20px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -1063,5 +1062,4 @@ header {
     text-align: center;
     color: #396df2;
   }
-  
 }
