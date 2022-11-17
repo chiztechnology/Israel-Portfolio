@@ -86,14 +86,14 @@ projects.forEach((p) => {
 const btn = document.querySelectorAll('.openProject');
 let wrapper = null;
 
-function showModal(obj) {  
-  if(wrapper !== null){
+function showModal(obj){  
+  if (wrapper !== null){
     document.body.removeChild(wrapper);
     // document.getElementById('modal').remove();
   }
   // alert("clicked "
   wrapper = document.createElement('div');
-  wrapper.innerHTML =`
+  wrapper.innerHTML = `
   <div class="modal" id="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
