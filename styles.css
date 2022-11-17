@@ -881,7 +881,7 @@ header {
 }
 
 .close {
-  color: #aaaaaa;
+  color: #aaa;
   font-size: 28px;
   font-weight: bold;
 }
@@ -943,7 +943,7 @@ header {
 .footer-button-title {
   width: 58px;
   height: 20px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -951,7 +951,7 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #396DF2;
+  color: #396df2;
 }
 
 .cards-img-preview {
@@ -971,7 +971,6 @@ header {
 
 .skills-ul-preview {
   margin-top: 0;
-  padding-top: 0;
   list-style-type: none;
   padding: 0;
   margin-bottom: 10px;
@@ -981,7 +980,6 @@ header {
   text-decoration: none;
 }
 
-
 @media only screen and (min-width: 768px) {
 
   .modal-content {
@@ -990,7 +988,6 @@ header {
 
   .close {
     float: right;
-
   }
 
   .close:hover,
@@ -1039,7 +1036,6 @@ header {
     margin-left: 10px;
   }
 
-
   .footer-popup-button {
     height: 42px;
     border-radius: 8px;
@@ -1065,6 +1061,7 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #396DF2;
+    color: #396df2;
   }
+  
 }

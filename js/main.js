@@ -23,4 +23,3 @@ document.getElementById('drawer-nav-url2').addEventListener('click', () => {
 document.getElementById('drawer-nav-url3').addEventListener('click', () => {
   document.querySelector('.mobile-menu-drawer').setAttribute('style', 'visibility:hidden');
 });
-
