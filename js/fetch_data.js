@@ -84,14 +84,17 @@ projects.forEach((p) => {
 });
 
 const btn = document.querySelectorAll('.openProject');
+let wrapper = null;
 
-function showModal(obj) {
-  if (document.getElementById('modal') !== null) {
-    document.getElementById('modal').remove();
+function showModal(obj) {  
+  if (wrapper !== null) {
+    document.body.removeChild(wrapper);
+    // document.getElementById('modal').remove();
   }
-
-  document.getElementById('works-section').innerHTML += `
-  <div class="modal" id="modal" tabindex="-1">
+  // alert("clicked "
+  wrapper = document.createElement('div');
+  wrapper.innerHTML =  `
+  <div class="modal" id="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <div class="cards-work-preview">
@@ -139,6 +142,7 @@ function showModal(obj) {
                     </div>
                 </div>
             </div>`;
+  document.body.appendChild(wrapper);
 
   const modal = document.getElementById('modal');
   modal.style.display = 'block';
@@ -148,19 +152,20 @@ function showModal(obj) {
   // // When the user clicks on <span> (x), close the modal
   span.onclick = () => {
     modal.style.display = 'none';
+    // document.getElementById('modal').remove();
   };
 
   window.onclick = (event) => {
     if (event.target === document.getElementById('modal')) {
       modal.style.display = 'none';
+      // document.getElementById('modal').remove();
     }
   };
 }
 
 btn.forEach((node) => {
-  node.addEventListener('click', (e) => {
+  document.getElementById(node.id).addEventListener('click', () => {
     const item = projects.find((item) => (item.id === parseInt(node.id, 10)));
     showModal(item);
-    e.preventDefault();
   });
 });
