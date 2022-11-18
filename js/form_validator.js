@@ -47,9 +47,24 @@ const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format !';
 
 form.addEventListener('submit', (event) => {
+  event.preventDefault();
   // validate the form
   const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
   if (!emailValid) {
     event.preventDefault();
+  }
+  else{
+    var formData = new FormData();
+    formData.append("name", form.elements.name.value);
+    formData.append("email", form.elements.email.value);
+    formData.append("message", form.elements.message.value);
+
+    var myObject = {};
+
+    formData.forEach(function(value, key){
+      myObject[key] = value;
+    });
+
+    localStorage.setItem('form-data', JSON.stringify(myObject));
   }
 });
