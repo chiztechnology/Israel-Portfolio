@@ -47,40 +47,28 @@ const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format !';
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
   // validate the form
   const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
   if (!emailValid) {
     event.preventDefault();
   }
-  else{
+  else {
     var formData = new FormData();
     formData.append("name", form.elements.name.value);
     formData.append("email", form.elements.email.value);
     formData.append("message", form.elements.message.value);
-
     var myObject = {};
-
-    formData.forEach(function(value, key){
+    formData.forEach(function (value, key) {
       myObject[key] = value;
     });
-
     localStorage.setItem('form-data', JSON.stringify(myObject));
   }
-  
-  window.onload = ()=>{
-  let myObject=localStorage.getItem('form-data');
-  console.log('retrieved object:  ', JSON.parse(myObject));
-  // console.log(JSON.stringify(myObject));
-  // myObject.forEach(function(value, key){
-  //   // myObject[key] = value;
-  //   console.log(`key: ${key} ---> value: ${value}`);
-  // });
-  // // myObject && {
-    form.elements.name.value = JSON.parse(myObject).name ; 
-    form.elements.email.value = JSON.parse(myObject).email ; 
-    form.elements.message.value = JSON.parse(myObject).message ; 
-  // // }
+});
+
+window.onload = () => {
+  let myObject = localStorage.getItem('form-data');
+  form.elements.name.value = JSON.parse(myObject).name;
+  form.elements.email.value = JSON.parse(myObject).email;
+  form.elements.message.value = JSON.parse(myObject).message;
 }
 
-});
