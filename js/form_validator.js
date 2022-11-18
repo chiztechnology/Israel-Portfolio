@@ -28,8 +28,7 @@ function validateEmail(input, requiredMsg, invalidMsg) {
   if (!hasValue(input, requiredMsg)) {
     return false;
   }
-  // validate email format
-  //eslint-disable-next-line
+  // eslint-disable-next-line
   const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const email = input.value.trim();
   if (!emailRegex.test(email)) {
@@ -45,7 +44,7 @@ const form = document.querySelector('#contact-form');
 const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format !';
 
-form.addEventListener('submit',(event) => {
+form.addEventListener('submit', (event) => {
   // validate the form
   const emailValid = validateEmail(form.elements['.email'], EMAIL_REQUIRED, EMAIL_INVALID);
   if (!emailValid) {
