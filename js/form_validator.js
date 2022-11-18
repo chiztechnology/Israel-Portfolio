@@ -49,16 +49,15 @@ const EMAIL_INVALID = 'Please enter a correct email address format !';
 form.addEventListener('submit', (event) => {
   // validate the form
   const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
+  let formData = new FormData();
+  let myObject = {};
   if (!emailValid) {
     event.preventDefault();
-  }
-  else {
-    var formData = new FormData();
-    formData.append("name", form.elements.name.value);
-    formData.append("email", form.elements.email.value);
-    formData.append("message", form.elements.message.value);
-    var myObject = {};
-    formData.forEach(function (value, key) {
+  }else {
+    formData.append('name', form.elements.name.value);
+    formData.append('email', form.elements.email.value);
+    formData.append('message', form.elements.message.value);
+    formData.forEach((value, key) => {
       myObject[key] = value;
     });
     localStorage.setItem('form-data', JSON.stringify(myObject));
@@ -70,5 +69,4 @@ window.onload = () => {
   form.elements.name.value = JSON.parse(myObject).name;
   form.elements.email.value = JSON.parse(myObject).email;
   form.elements.message.value = JSON.parse(myObject).message;
-}
-
+};
