@@ -49,11 +49,11 @@ const EMAIL_INVALID = 'Please enter a correct email address format !';
 form.addEventListener('submit', (event) => {
   // validate the form
   const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
-  let formData = new FormData();
-  let myObject = {};
+  const formData = new FormData();
+  const myObject = {};
   if (!emailValid) {
     event.preventDefault();
-  }else {
+  } else {
     formData.append('name', form.elements.name.value);
     formData.append('email', form.elements.email.value);
     formData.append('message', form.elements.message.value);
