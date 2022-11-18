@@ -43,14 +43,53 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 }
 
 const form = document.querySelector('#contact-form');
+const emailField = document.getElementById('email');
+const nameField = document.getElementById('name');
+const messageField = document.getElementById('message');
 const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format !';
 
-form.addEventListener('submit', (event) => {
-  // validate the form
-  const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
+nameField.oninput = (e) => {
   const formData = new FormData();
   const myObject = {};
+  formData.append('name', nameField.value);
+  formData.append('email', emailField.value);
+  formData.append('message', messageField.value);
+  formData.forEach((value, key) => {
+    myObject[key] = value;
+  });
+  localStorage.setItem('form-data', JSON.stringify(myObject));
+}
+
+emailField.oninput = (e) => {
+  const formData = new FormData();
+  const myObject = {};
+  formData.append('name', nameField.value);
+  formData.append('email', emailField.value);
+  formData.append('message', messageField.value);
+  formData.forEach((value, key) => {
+    myObject[key] = value;
+  });
+  localStorage.setItem('form-data', JSON.stringify(myObject));
+}
+
+messageField.oninput = (e) => {
+  const formData = new FormData();
+  const myObject = {};
+  formData.append('name', nameField.value);
+  formData.append('email', emailField.value);
+  formData.append('message', messageField.value);
+  formData.forEach((value, key) => {
+    myObject[key] = value;
+  });
+  localStorage.setItem('form-data', JSON.stringify(myObject));
+}
+
+form.addEventListener('submit', (event) => {
+  const formData = new FormData();
+  const myObject = {};
+  // validate the form
+  const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
   if (!emailValid) {
     event.preventDefault();
   } else {
