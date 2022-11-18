@@ -65,7 +65,7 @@ form.addEventListener('submit', (event) => {
 });
 
 window.onload = () => {
-  let myObject = localStorage.getItem('form-data');
+  const myObject = localStorage.getItem('form-data');
   form.elements.name.value = JSON.parse(myObject).name;
   form.elements.email.value = JSON.parse(myObject).email;
   form.elements.message.value = JSON.parse(myObject).message;
