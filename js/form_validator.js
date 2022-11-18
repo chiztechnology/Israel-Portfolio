@@ -67,4 +67,20 @@ form.addEventListener('submit', (event) => {
 
     localStorage.setItem('form-data', JSON.stringify(myObject));
   }
+  
+  window.onload = ()=>{
+  let myObject=localStorage.getItem('form-data');
+  console.log('retrieved object:  ', JSON.parse(myObject));
+  // console.log(JSON.stringify(myObject));
+  // myObject.forEach(function(value, key){
+  //   // myObject[key] = value;
+  //   console.log(`key: ${key} ---> value: ${value}`);
+  // });
+  // // myObject && {
+    form.elements.name.value = JSON.parse(myObject).name ; 
+    form.elements.email.value = JSON.parse(myObject).email ; 
+    form.elements.message.value = JSON.parse(myObject).message ; 
+  // // }
+}
+
 });
