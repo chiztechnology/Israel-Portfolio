@@ -34,9 +34,11 @@ function validateEmail(input, requiredMsg, invalidMsg) {
   if (!emailRegex.test(email)) {
     return showError(input, invalidMsg);
     // check if email is in small letter;
-  } if (email.toLowerCase() === email) {
+  }
+  if (email.toLowerCase() === email) {
     return true;
   }
+
   return showError(input, invalidMsg);
 }
 
@@ -46,7 +48,7 @@ const EMAIL_INVALID = 'Please enter a correct email address format !';
 
 form.addEventListener('submit', (event) => {
   // validate the form
-  const emailValid = validateEmail(form.elements['.email'], EMAIL_REQUIRED, EMAIL_INVALID);
+  const emailValid = validateEmail(form.elements['email'], EMAIL_REQUIRED, EMAIL_INVALID);
   if (!emailValid) {
     event.preventDefault();
   }
