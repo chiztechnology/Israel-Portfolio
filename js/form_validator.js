@@ -49,7 +49,7 @@ const messageField = document.getElementById('message');
 const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format !';
 
-nameField.oninput = (e) => {
+nameField.oninput = () => {
   const formData = new FormData();
   const myObject = {};
   formData.append('name', nameField.value);
@@ -59,9 +59,9 @@ nameField.oninput = (e) => {
     myObject[key] = value;
   });
   localStorage.setItem('form-data', JSON.stringify(myObject));
-}
+};
 
-emailField.oninput = (e) => {
+emailField.oninput = () => {
   const formData = new FormData();
   const myObject = {};
   formData.append('name', nameField.value);
@@ -71,9 +71,9 @@ emailField.oninput = (e) => {
     myObject[key] = value;
   });
   localStorage.setItem('form-data', JSON.stringify(myObject));
-}
+};
 
-messageField.oninput = (e) => {
+messageField.oninput = () => {
   const formData = new FormData();
   const myObject = {};
   formData.append('name', nameField.value);
@@ -83,7 +83,7 @@ messageField.oninput = (e) => {
     myObject[key] = value;
   });
   localStorage.setItem('form-data', JSON.stringify(myObject));
-}
+};
 
 form.addEventListener('submit', (event) => {
   const formData = new FormData();
