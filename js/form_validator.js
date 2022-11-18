@@ -29,28 +29,24 @@ function validateEmail(input, requiredMsg, invalidMsg) {
     return false;
   }
   // validate email format
-  const emailRegex =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
+  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const email = input.value.trim();
   if (!emailRegex.test(email)) {
     return showError(input, invalidMsg);
     // check if email is in small letter;
   } else if (email.toLowerCase() === email) {
     return true;
-  } else {
+  }  
     return showError(input, invalidMsg);
   }
 
-}
-
-const form = document.querySelector("#contact-form");
+const form = document.querySelector('#contact-form');
 const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format !';
 
-form.addEventListener("submit", function (event) {
+form.addEventListener('submit', function (event) {
   // validate the form
-  let emailValid = validateEmail(form.elements['email'], EMAIL_REQUIRED, EMAIL_INVALID);
+  const emailValid = validateEmail(form.elements['email'], EMAIL_REQUIRED, EMAIL_INVALID);
   if (!emailValid) {
     event.preventDefault();
   }

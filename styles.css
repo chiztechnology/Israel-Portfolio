@@ -593,7 +593,6 @@ header {
 
 .email-success {
   border-radius: 5px;
-  border-color: transparent;
   height: 48px;
   width: 298px;
   margin: 10px;
@@ -613,7 +612,6 @@ header {
 
 .email-error {
   border-radius: 5px;
-  border-color: transparent;
   height: 48px;
   width: 298px;
   margin: 10px;
@@ -628,7 +626,7 @@ header {
   margin-bottom: 0;
   border-color: rgb(255, 0, 0);
   border-width: 1px;
-  border-style:solid;
+  border-style: solid;
 }
 
 .text-box {
@@ -1111,7 +1109,7 @@ header {
 .error-msg-box {
   color: rgb(238, 200, 76);
   font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
 }
