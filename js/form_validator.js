@@ -60,9 +60,11 @@ form.addEventListener('submit', (event) => {
     formData.append("message", form.elements.message.value);
 
     var myObject = {};
-    
+
     formData.forEach(function(value, key){
       myObject[key] = value;
     });
+
+    localStorage.setItem('form-data', JSON.stringify(myObject));
   }
 });
