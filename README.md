@@ -11,7 +11,7 @@ CSS
 
 Click on the link below [or copy it and paste in your browser] to see my portfolio
 
-`https://chiztechnology.github.io/Israel-Portfolio/`
+[Live Demo](https://chiztechnology.github.io/Israel-Portfolio/)
 
 Please follow the instructions to clone my repository in your computer
 
