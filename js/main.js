@@ -23,3 +23,14 @@ document.getElementById('drawer-nav-url2').addEventListener('click', () => {
 document.getElementById('drawer-nav-url3').addEventListener('click', () => {
   document.querySelector('.mobile-menu-drawer').setAttribute('style', 'visibility:hidden');
 });
+
+// adding box shaddow on scroll
+
+window.addEventListener('scroll', ()=>{
+  var y = this.scrollY;
+  if(y > 10){
+    document.getElementById('main-header').classList.add('active');
+  }else{
+    document.getElementById('main-header').classList.remove('active');
+  }
+})

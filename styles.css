@@ -76,13 +76,27 @@ body {
   background: #fff;
 }
 
-header {
+#main-header {
   width: 100%;
   height: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 9000;
+  overflow: auto;
+  transition: all 0.15s linear;
+  top: 0;
+  z-index: 3;
+  background-color: #fff;
 }
+
+#main-header.active {
+  -webkit-box-shadow: 0 14px 12px -6px #808080;
+  -moz-box-shadow: 0 14px 12px -6px #808080;
+  box-shadow: 0 4px 8px -6px #808080;
+}
+
 
 .logo {
   font-family: 'Poppins', sans-serif;
@@ -691,7 +705,7 @@ header {
     align-items: center;
   }
 
-  header {
+  #main-header {
     width: 100%;
   }
 
