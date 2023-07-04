@@ -9,8 +9,13 @@ document.getElementById('mobile-drawer-close-icon').addEventListener('click', ()
   document.querySelector('.mobile-menu-drawer').setAttribute('style', 'visibility: hidden');
 });
 
-// click on portfolio
+// click on home
 document.getElementById('drawer-nav-url').addEventListener('click', () => {
+  document.querySelector('.mobile-menu-drawer').setAttribute('style', 'visibility:hidden');
+});
+
+// click on portfolio
+document.getElementById('drawer-nav-url1').addEventListener('click', () => {
   document.querySelector('.mobile-menu-drawer').setAttribute('style', 'visibility:hidden');
 });
 

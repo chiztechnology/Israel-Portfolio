@@ -84,9 +84,10 @@ body {
   align-items: center;
   position: fixed;
   z-index: 9000;
-  overflow: auto;
+  /* overflow: auto; */
   transition: all 0.15s linear;
   top: 0;
+  left:0;
   z-index: 3;
   background-color: #fff;
 }
@@ -131,12 +132,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 470px;
+  display: flex;
   border-bottom-left-radius: 80px;
 }
 
 .intro-text {
-  width: 300px;
+  width: 80%;
   height: 150px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -154,7 +155,6 @@ body {
 
 .description {
   width: 327px;
-  height: 146px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -198,7 +198,7 @@ body {
   to {
     margin-left: 0%;
     justify-content: space-between;
-    width: 65%;
+    width: 10%;
   }
 }
 
@@ -209,21 +209,22 @@ body {
 
 .works-section {
   background: #f4f3f3;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 2800px;
-  margin-top: 114px;
+  margin-top: 20px;
   padding-bottom: 80px;
+
 }
 
 .cards-work {
-  margin-top: 114px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   padding: 16px;
   width: 302px;
-  height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -715,6 +716,7 @@ body {
 
   .mobile-nav {
     display: none;
+    
   }
 
   .nav-url {
@@ -745,30 +747,39 @@ body {
     width: 100%;
     border-bottom-left-radius: 80px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    padding-top: 40px;
   }
 
+  .intro-sub-div {
+    width: 52%;
+  }
+  
+
+
+
   .intro-text {
-    width: 920px;
+    width: 80%;
     height: 122px;
-    margin-right: 0;
-    margin-bottom: 0;
+    margin: 0;
     font-size: 48px;
   }
 
   .subtitle {
-    width: 920px;
+    width: 100%;
   }
 
   .links-group {
-    width: 920px;
+    width: 40%;
     padding-left: 0;
   }
 
   .description {
-    width: 920px;
-    height: 48px;
+    width: 100%;
+    /* height: 48px; */
     margin-top: 0;
   }
 
@@ -778,8 +789,7 @@ body {
 
   .cards-work {
     width: 95%;
-    height: 552px;
-    margin-top: 114px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     padding: 16px;
@@ -872,6 +882,10 @@ body {
 
   .about-myself-sub-container .links-group {
     padding-left: 24px;
+  }
+
+  .links-group {
+    padding-left: 15px;
   }
 
   .frameworks-container {
