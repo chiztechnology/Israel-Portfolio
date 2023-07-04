@@ -78,7 +78,7 @@ body {
 
 #main-header {
   width: 100%;
-  height: 48px;
+  height: 55px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,12 +133,19 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   display: flex;
+  flex-direction: column;
   border-bottom-left-radius: 80px;
+}
+
+.avatar {
+  margin-top: 60px;
+  align-self: center;
 }
 
 .intro-text {
   width: 80%;
-  height: 150px;
+  /* height: 150px; */
+  padding-bottom: 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -147,10 +154,8 @@ body {
   display: flex;
   align-items: center;
   color: #172b4d;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 114px;
-  margin-right: 0;
+  padding: 0 24px 0 24px;
+  margin:0 0 0 0;
 }
 
 .description {
@@ -269,7 +274,7 @@ body {
 
 .skills-description {
   width: 295px;
-  height: 76px;
+  padding: 0 0 5px 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -286,38 +291,17 @@ body {
 
 .skills-list {
   float: left;
+  margin: 5px 3px 0 3px;
 }
 
-.skills-container-1 {
+.skills-container-badge {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
   height: 24px;
+  padding: 0 8px 0 8px;
   background: #ebebff;
   border-radius: 8px;
-}
-
-.skills-container-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 24px;
-  background: #ebebff;
-  border-radius: 8px;
-  margin-left: 8px;
-}
-
-.skills-container-3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 89px;
-  height: 24px;
-  background: #ebebff;
-  border-radius: 8px;
-  margin-left: 8px;
 }
 
 .skills-item {
@@ -356,8 +340,7 @@ body {
 }
 
 .view-project-button {
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: 40px 10px 0 0 ;
   width: 140px;
   height: 48px;
   background-color: #fff;
@@ -391,7 +374,7 @@ body {
 .about-myself-section {
   margin: 0;
   width: 375px;
-  height: 1263px;
+  padding: 0 0 40px 0;
   background: #fff;
   border-top-right-radius: 80px;
 }
@@ -747,11 +730,17 @@ body {
     width: 100%;
     border-bottom-left-radius: 80px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     /* flex-direction: column; */
     align-items: center;
-    padding-top: 40px;
+    padding: 120px 0 80px 0;
+  }
+
+  .avatar {
+    margin-top: 10px;
+    align-self:baseline;
   }
 
   .intro-sub-div {
@@ -763,7 +752,8 @@ body {
 
   .intro-text {
     width: 80%;
-    height: 122px;
+    /* height: 122px; */
+    padding-bottom: 20px;
     margin: 0;
     font-size: 48px;
   }
@@ -796,6 +786,10 @@ body {
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
+  }
+
+  .cards-work :nth-child() {
+    flex-direction: row-reverse;
   }
 
   .cards-work div {
@@ -831,13 +825,13 @@ body {
   }
 
   .skills-list {
-    padding-right: 20px;
+    padding: 0 5px 0 5px;
   }
 
   .about-myself-section {
     margin: 0;
     width: 100%;
-    height: 924px;
+    padding: 0 0 40px 0;
     background: #fff;
     border-top-right-radius: 80px;
     display: flex;
