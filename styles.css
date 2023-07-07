@@ -87,7 +87,7 @@ body {
   /* overflow: auto; */
   transition: all 0.15s linear;
   top: 0;
-  left:0;
+  left: 0;
   z-index: 3;
   background-color: #fff;
 }
@@ -155,7 +155,7 @@ body {
   align-items: center;
   color: #172b4d;
   padding: 0 24px 0 24px;
-  margin:0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .description {
@@ -261,6 +261,16 @@ body {
   height: 32px;
 }
 
+.frame-2-preview {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 286px;
+  height: 32px;
+}
+
 .frame-subtitle {
   width: 55px;
   height: 16px;
@@ -340,7 +350,7 @@ body {
 }
 
 .view-project-button {
-  margin: 40px 10px 0 0 ;
+  margin: 40px 10px 0 0;
   width: 140px;
   height: 48px;
   background-color: #fff;
@@ -521,6 +531,7 @@ body {
   background-position: right;
   background-repeat: no-repeat;
   border-top-left-radius: 80px;
+  width: 100%;
   height: 860px;
   display: flex;
   flex-direction: column;
@@ -543,7 +554,7 @@ body {
 
 .contact-text {
   width: 327px;
-  height: 140px;
+  /* height: 140px; */
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -699,7 +710,7 @@ body {
 
   .mobile-nav {
     display: none;
-    
+
   }
 
   .nav-url {
@@ -740,13 +751,13 @@ body {
 
   .avatar {
     margin-top: 10px;
-    align-self:baseline;
+    align-self: baseline;
   }
 
   .intro-sub-div {
     width: 52%;
   }
-  
+
 
 
 
@@ -814,11 +825,21 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-left: 40px;
     width: 286px;
     height: 32px;
-    margin-left: 40px;
+    padding-left: 35px;
   }
+
+  .frame-2-preview {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 286px;
+    height: 32px;
+  }
+
 
   .skills-ul {
     margin-left: 40px;
@@ -916,6 +937,10 @@ body {
     border-color: transparent;
     border-color: #5867eb;
   }
+
+  .middle-container {
+    display: flex;
+  }
 }
 
 .modal {
@@ -928,7 +953,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  padding-top: 50px;
+  padding-top: 70px;
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
@@ -939,6 +964,7 @@ body {
   margin: auto;
   border: 1px solid #888;
   width: 80%;
+  /* display: flex; */
   border-radius: 1rem;
 }
 
@@ -958,7 +984,7 @@ body {
 .cards-work-preview {
   margin-top: 0;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 16px;
   width: 90%;
   background: #fff;
@@ -1018,7 +1044,7 @@ body {
 }
 
 .cards-img-preview {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 8px;
 }
@@ -1045,7 +1071,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .modal-content {
-    width: 50%;
+    width: 80%;
   }
 
   .close {
@@ -1086,18 +1112,17 @@ body {
   }
 
   .cards-img-preview {
-    width: 100%;
+    width: 45%;
     height: auto;
     border-radius: 8px;
   }
 
   .preview-body-content {
-    display: flex;
+    display: block;
+    width: 50%;
+    padding-left: 20px;
   }
 
-  .skills-and-footer-body {
-    margin-left: 10px;
-  }
 
   .footer-popup-button {
     height: 42px;

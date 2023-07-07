@@ -107,13 +107,14 @@ function showModal(obj) {
                                 <span class="close">&times;</span>
                             </div>
 
-                            <div class="frame-2">
+                            <div class="frame-2-preview">
                                 <h3 class="frame-subtitle">${obj.subtitle}</h3>
                                 <div class="rounded-bullet"></div>
                                 <h3 class="position-title">${obj.position}</h3>
                                 <div class="rounded-bullet"></div>
                                 <h3 class="work-year">${obj.year}</h3>
                             </div>
+                            <div class="middle-container">
                             <img src="img/${obj.img}" alt="portfolio project image" class="cards-img-preview">
                             <!-- body content -->
                             <div class="preview-body-content"> 
@@ -140,6 +141,7 @@ function showModal(obj) {
                                         </div>
                                         </a>
                                     </div>
+                            </div>
                             </div>
                         </div>
                     </div>
