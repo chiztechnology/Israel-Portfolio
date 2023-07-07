@@ -6,7 +6,7 @@ const projects = [
     position: 'Full-Stack',
     year: '2023',
     description: 'CAR BOOKING is a platform built in two different apps that allow users to reserve cars for renting. the user can browse the list of cars and show details for each car, the user can submit a reservation form and can cancel reservation...',
-    skills: ['React', 'Ruby', 'Rails', 'Javascript', 'Git','Pair-programming'],
+    skills: ['React', 'Ruby', 'Rails', 'Javascript', 'Git', 'Pair-programming'],
     img: 'car-renting-app-overview.png',
     source_code: 'https://github.com/sajibarafatsiddiqui/final-capstone-project',
     live_version: '#',
@@ -62,7 +62,7 @@ function returnSkills(array) {
 }
 
 projects.forEach((p) => {
-  let i= 1;
+  let i = 1;
   document.getElementById('works-section').innerHTML += `<div class="cards-work">
     <img src="img/${p.img}" alt="portfolio project image" class="cards-img">
     <div>
@@ -75,7 +75,7 @@ projects.forEach((p) => {
             <h3 class="work-year">${p.year}</h3>
         </div>
         <p class="skills-description">
-           ${p.description.substring(0,206)}...
+           ${p.description.substring(0, 206)}...
         </p>
         <ul class="skills-ul">
             ${returnSkills(p.skills)}
@@ -83,7 +83,7 @@ projects.forEach((p) => {
         <button class="view-project-button openProject" id="${p.id}">See Project</button>
     </div>
 </div>`;
-i++;
+  i++;
 });
 
 const btn = document.querySelectorAll('.openProject');
@@ -119,7 +119,7 @@ function showModal(obj) {
                             <!-- body content -->
                             <div class="preview-body-content"> 
                                 <p class="skills-description-preview">
-                                    ${obj.description}
+                                ${obj.description.substring(0, 206)}...
                                 </p>
                                 <div class="skills-and-footer-body">
                                     <ul class="skills-ul-preview">
