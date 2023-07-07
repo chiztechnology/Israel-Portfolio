@@ -1,5 +1,17 @@
 const projects = [
   {
+    id: 142134,
+    title: 'Car renting app',
+    subtitle: 'CAPSTONE',
+    position: 'Full-Stack',
+    year: '2023',
+    description: 'CAR BOOKING is a platform built in two different apps that allow users to reserve cars for renting. the user can browse the list of cars and show details for each car, the user can submit a reservation form and can cancel reservation...',
+    skills: ['React', 'Ruby', 'Rails', 'Javascript', 'Git','Pair-programming'],
+    img: 'car-renting-app-overview.png',
+    source_code: 'https://github.com/sajibarafatsiddiqui/final-capstone-project',
+    live_version: '#',
+  },
+  {
     id: 1,
     title: 'Africa Summit',
     subtitle: 'Af. SUM',
@@ -41,7 +53,7 @@ function returnSkills(array) {
   let value = '';
   for (let i = 0; i < array.length; i += 1) {
     value += `<li class="skills-list first-element">
-      <div class="skills-container-${(i + 1)}">
+      <div class="skills-container-badge">
       <h4 class="skills-item">${array[i]}</h4>
       </div>
       </li>`;
@@ -50,6 +62,7 @@ function returnSkills(array) {
 }
 
 projects.forEach((p) => {
+  let i= 1;
   document.getElementById('works-section').innerHTML += `<div class="cards-work">
     <img src="img/${p.img}" alt="portfolio project image" class="cards-img">
     <div>
@@ -62,7 +75,7 @@ projects.forEach((p) => {
             <h3 class="work-year">${p.year}</h3>
         </div>
         <p class="skills-description">
-           ${p.description}
+           ${p.description.substring(0,206)}...
         </p>
         <ul class="skills-ul">
             ${returnSkills(p.skills)}
@@ -70,6 +83,7 @@ projects.forEach((p) => {
         <button class="view-project-button openProject" id="${p.id}">See Project</button>
     </div>
 </div>`;
+i++;
 });
 
 const btn = document.querySelectorAll('.openProject');
@@ -93,13 +107,14 @@ function showModal(obj) {
                                 <span class="close">&times;</span>
                             </div>
 
-                            <div class="frame-2">
+                            <div class="frame-2-preview">
                                 <h3 class="frame-subtitle">${obj.subtitle}</h3>
                                 <div class="rounded-bullet"></div>
                                 <h3 class="position-title">${obj.position}</h3>
                                 <div class="rounded-bullet"></div>
                                 <h3 class="work-year">${obj.year}</h3>
                             </div>
+                            <div class="middle-container">
                             <img src="img/${obj.img}" alt="portfolio project image" class="cards-img-preview">
                             <!-- body content -->
                             <div class="preview-body-content"> 
@@ -113,19 +128,20 @@ function showModal(obj) {
         
                                     <div class="footer-popup">
                                         <!-- customized buttons -->
-                                        <a href="${obj.live_version}" class="footer-popup-link">
+                                        <a href="${obj.live_version}" target="_blank" class="footer-popup-link">
                                         <div class="footer-popup-button">
-                                            <h5 class="footer-button-title">See Live</h5>
-                                            <img src="img/github_icon_preview.svg" alt="">
-                                        </div>
-                                        </a>
-                                        <a href="${obj.source_code}" class="footer-popup-link">
-                                        <div class="footer-popup-button">
-                                            <h5 class="footer-button-title">See Source</h5>
+                                            <h5 class="footer-button-title">Go Live</h5>
                                             <img src="img/go-live-icon.svg" alt="">
                                         </div>
                                         </a>
+                                        <a href="${obj.source_code}" target="_blank" class="footer-popup-link">
+                                        <div class="footer-popup-button">
+                                            <h5 class="footer-button-title">View Source</h5>
+                                            <img src="img/github_icon_preview.svg" alt="">
+                                        </div>
+                                        </a>
                                     </div>
+                            </div>
                             </div>
                         </div>
                     </div>

@@ -76,13 +76,28 @@ body {
   background: #fff;
 }
 
-header {
+#main-header {
   width: 100%;
-  height: 48px;
+  height: 55px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 9000;
+  /* overflow: auto; */
+  transition: all 0.15s linear;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: #fff;
 }
+
+#main-header.active {
+  -webkit-box-shadow: 0 14px 12px -6px #808080;
+  -moz-box-shadow: 0 14px 12px -6px #808080;
+  box-shadow: 0 4px 8px -6px #808080;
+}
+
 
 .logo {
   font-family: 'Poppins', sans-serif;
@@ -117,13 +132,20 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 470px;
+  display: flex;
+  flex-direction: column;
   border-bottom-left-radius: 80px;
 }
 
+.avatar {
+  margin-top: 60px;
+  align-self: center;
+}
+
 .intro-text {
-  width: 300px;
-  height: 150px;
+  width: 80%;
+  /* height: 150px; */
+  padding-bottom: 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -132,15 +154,12 @@ header {
   display: flex;
   align-items: center;
   color: #172b4d;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 114px;
-  margin-right: 0;
+  padding: 0 24px 0 24px;
+  margin: 0 0 0 0;
 }
 
 .description {
   width: 327px;
-  height: 146px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -184,7 +203,7 @@ header {
   to {
     margin-left: 0%;
     justify-content: space-between;
-    width: 65%;
+    width: 10%;
   }
 }
 
@@ -195,21 +214,22 @@ header {
 
 .works-section {
   background: #f4f3f3;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 2800px;
-  margin-top: 114px;
+  margin-top: 20px;
   padding-bottom: 80px;
+
 }
 
 .cards-work {
-  margin-top: 114px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   padding: 16px;
   width: 302px;
-  height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -241,6 +261,16 @@ header {
   height: 32px;
 }
 
+.frame-2-preview {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 286px;
+  height: 32px;
+}
+
 .frame-subtitle {
   width: 55px;
   height: 16px;
@@ -254,7 +284,7 @@ header {
 
 .skills-description {
   width: 295px;
-  height: 76px;
+  padding: 0 0 5px 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -271,38 +301,17 @@ header {
 
 .skills-list {
   float: left;
+  margin: 5px 3px 0 3px;
 }
 
-.skills-container-1 {
+.skills-container-badge {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
   height: 24px;
+  padding: 0 8px 0 8px;
   background: #ebebff;
   border-radius: 8px;
-}
-
-.skills-container-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 24px;
-  background: #ebebff;
-  border-radius: 8px;
-  margin-left: 8px;
-}
-
-.skills-container-3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 89px;
-  height: 24px;
-  background: #ebebff;
-  border-radius: 8px;
-  margin-left: 8px;
 }
 
 .skills-item {
@@ -341,8 +350,7 @@ header {
 }
 
 .view-project-button {
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: 40px 10px 0 0;
   width: 140px;
   height: 48px;
   background-color: #fff;
@@ -376,7 +384,7 @@ header {
 .about-myself-section {
   margin: 0;
   width: 375px;
-  height: 1263px;
+  padding: 0 0 40px 0;
   background: #fff;
   border-top-right-radius: 80px;
 }
@@ -523,6 +531,7 @@ header {
   background-position: right;
   background-repeat: no-repeat;
   border-top-left-radius: 80px;
+  width: 100%;
   height: 860px;
   display: flex;
   flex-direction: column;
@@ -545,7 +554,7 @@ header {
 
 .contact-text {
   width: 327px;
-  height: 140px;
+  /* height: 140px; */
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -691,7 +700,7 @@ header {
     align-items: center;
   }
 
-  header {
+  #main-header {
     width: 100%;
   }
 
@@ -701,6 +710,7 @@ header {
 
   .mobile-nav {
     display: none;
+
   }
 
   .nav-url {
@@ -731,30 +741,46 @@ header {
     width: 100%;
     border-bottom-left-radius: 80px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 120px 0 80px 0;
   }
 
+  .avatar {
+    margin-top: 10px;
+    align-self: baseline;
+  }
+
+  .intro-sub-div {
+    width: 52%;
+  }
+
+
+
+
   .intro-text {
-    width: 920px;
-    height: 122px;
-    margin-right: 0;
-    margin-bottom: 0;
+    width: 80%;
+    /* height: 122px; */
+    padding-bottom: 20px;
+    margin: 0;
     font-size: 48px;
   }
 
   .subtitle {
-    width: 920px;
+    width: 100%;
   }
 
   .links-group {
-    width: 920px;
+    width: 40%;
     padding-left: 0;
   }
 
   .description {
-    width: 920px;
-    height: 48px;
+    width: 100%;
+    /* height: 48px; */
     margin-top: 0;
   }
 
@@ -764,14 +790,17 @@ header {
 
   .cards-work {
     width: 95%;
-    height: 552px;
-    margin-top: 114px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     padding: 16px;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
+  }
+
+  .cards-work :nth-child() {
+    flex-direction: row-reverse;
   }
 
   .cards-work div {
@@ -796,24 +825,34 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-left: 40px;
     width: 286px;
     height: 32px;
-    margin-left: 40px;
+    padding-left: 35px;
   }
+
+  .frame-2-preview {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 286px;
+    height: 32px;
+  }
+
 
   .skills-ul {
     margin-left: 40px;
   }
 
   .skills-list {
-    padding-right: 20px;
+    padding: 0 5px 0 5px;
   }
 
   .about-myself-section {
     margin: 0;
     width: 100%;
-    height: 924px;
+    padding: 0 0 40px 0;
     background: #fff;
     border-top-right-radius: 80px;
     display: flex;
@@ -860,6 +899,10 @@ header {
     padding-left: 24px;
   }
 
+  .links-group {
+    padding-left: 15px;
+  }
+
   .frameworks-container {
     margin: 24px;
     margin-left: 32px;
@@ -894,6 +937,10 @@ header {
     border-color: transparent;
     border-color: #5867eb;
   }
+
+  .middle-container {
+    display: flex;
+  }
 }
 
 .modal {
@@ -906,7 +953,7 @@ header {
   top: 0;
   width: 100%;
   height: 100%;
-  padding-top: 50px;
+  padding-top: 70px;
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
@@ -917,6 +964,7 @@ header {
   margin: auto;
   border: 1px solid #888;
   width: 80%;
+  /* display: flex; */
   border-radius: 1rem;
 }
 
@@ -936,7 +984,7 @@ header {
 .cards-work-preview {
   margin-top: 0;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 16px;
   width: 90%;
   background: #fff;
@@ -996,7 +1044,7 @@ header {
 }
 
 .cards-img-preview {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 8px;
 }
@@ -1023,7 +1071,7 @@ header {
 
 @media only screen and (min-width: 768px) {
   .modal-content {
-    width: 50%;
+    width: 80%;
   }
 
   .close {
@@ -1064,18 +1112,17 @@ header {
   }
 
   .cards-img-preview {
-    width: 100%;
+    width: 45%;
     height: auto;
     border-radius: 8px;
   }
 
   .preview-body-content {
-    display: flex;
+    display: block;
+    width: 50%;
+    padding-left: 20px;
   }
 
-  .skills-and-footer-body {
-    margin-left: 10px;
-  }
 
   .footer-popup-button {
     height: 42px;
