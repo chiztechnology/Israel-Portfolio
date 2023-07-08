@@ -32,7 +32,7 @@ document.getElementById('drawer-nav-url3').addEventListener('click', () => {
 // adding box shaddow on scroll
 
 window.addEventListener('scroll', () => {
-  let y = this.scrollY;
+  const y = this.scrollY;
   if (y > 10) {
     document.getElementById('main-header').classList.add('active');
   } else {
