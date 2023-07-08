@@ -1,12 +1,12 @@
 let hamburgerBtn = document.getElementById("hamburger");
-let closeDrawerBtn =document.getElementById("exit-button");
+let closeDrawerBtn = document.getElementById("exit-button");
 
-hamburgerBtn.addEventListener("click", (e)=>{
+hamburgerBtn.addEventListener("click", (e) => {
   document.querySelector('.mobile-menu').setAttribute('style', 'visibility:visible');
   e.preventDefault();
 })
 
-closeDrawerBtn.addEventListener("click", (e)=>{
+closeDrawerBtn.addEventListener("click", (e) => {
   document.querySelector('.mobile-menu').setAttribute('style', 'visibility:hidden');
   e.preventDefault();
 })
