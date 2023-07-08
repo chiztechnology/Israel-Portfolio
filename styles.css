@@ -83,8 +83,6 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 9000;
-  /* overflow: auto; */
   transition: all 0.15s linear;
   top: 0;
   left: 0;
@@ -97,7 +95,6 @@ body {
   -moz-box-shadow: 0 14px 12px -6px #808080;
   box-shadow: 0 4px 8px -6px #808080;
 }
-
 
 .logo {
   font-family: 'Poppins', sans-serif;
@@ -144,8 +141,6 @@ body {
 
 .intro-text {
   width: 80%;
-  /* height: 150px; */
-  padding-bottom: 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -221,7 +216,6 @@ body {
   width: 100%;
   margin-top: 20px;
   padding-bottom: 80px;
-
 }
 
 .cards-work {
@@ -454,6 +448,7 @@ body {
   background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
+  color: #fff;
 }
 
 .get-resume-text:hover {
@@ -463,6 +458,11 @@ body {
 .languages-container {
   margin-top: 40px;
   padding: 50px 50px 0 50px;
+}
+
+.img-tech-stack {
+  height: 50px;
+  width: auto;
 }
 
 .languages-header {
@@ -491,6 +491,10 @@ body {
   padding-left: 10px;
 }
 
+.languages-li :hover {
+  background: #efeff5;
+}
+
 .languages-ul {
   padding: 0;
 }
@@ -500,7 +504,6 @@ body {
 }
 
 .each-language-text {
-  padding-left: 15px;
   height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -515,6 +518,8 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid gray;
+  margin-top: 20px;
+  padding: 10px 50px 0 50px;
 }
 
 .about-ul-category {
@@ -554,7 +559,6 @@ body {
 
 .contact-text {
   width: 327px;
-  /* height: 140px; */
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -710,7 +714,6 @@ body {
 
   .mobile-nav {
     display: none;
-
   }
 
   .nav-url {
@@ -744,8 +747,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
-    align-items: center;
     padding: 120px 0 80px 0;
   }
 
@@ -758,12 +759,8 @@ body {
     width: 52%;
   }
 
-
-
-
   .intro-text {
     width: 80%;
-    /* height: 122px; */
     padding-bottom: 20px;
     margin: 0;
     font-size: 48px;
@@ -775,12 +772,11 @@ body {
 
   .links-group {
     width: 40%;
-    padding-left: 0;
+    padding-left: 15px;
   }
 
   .description {
     width: 100%;
-    /* height: 48px; */
     margin-top: 0;
   }
 
@@ -840,7 +836,6 @@ body {
     height: 32px;
   }
 
-
   .skills-ul {
     margin-left: 40px;
   }
@@ -897,10 +892,6 @@ body {
 
   .about-myself-sub-container .links-group {
     padding-left: 24px;
-  }
-
-  .links-group {
-    padding-left: 15px;
   }
 
   .frameworks-container {
@@ -964,7 +955,6 @@ body {
   margin: auto;
   border: 1px solid #888;
   width: 80%;
-  /* display: flex; */
   border-radius: 1rem;
 }
 
@@ -984,7 +974,6 @@ body {
 .cards-work-preview {
   margin-top: 0;
   display: flex;
-  /* flex-direction: column; */
   padding: 16px;
   width: 90%;
   background: #fff;
@@ -1093,7 +1082,7 @@ body {
     width: 90%;
     background: #fff;
     border-radius: 16px;
-    overflow: scroll;
+    overflow: hidden;
   }
 
   .card-preview-header {
@@ -1122,7 +1111,6 @@ body {
     width: 50%;
     padding-left: 20px;
   }
-
 
   .footer-popup-button {
     height: 42px;
