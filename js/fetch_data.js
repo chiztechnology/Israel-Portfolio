@@ -62,7 +62,6 @@ function returnSkills(array) {
 }
 
 projects.forEach((p) => {
-  let i = 1;
   document.getElementById('works-section').innerHTML += `<div class="cards-work">
     <img src="img/${p.img}" alt="portfolio project image" class="cards-img">
     <div>
@@ -83,7 +82,6 @@ projects.forEach((p) => {
         <button class="view-project-button openProject" id="${p.id}">See Project</button>
     </div>
 </div>`;
-  i++;
 });
 
 const btn = document.querySelectorAll('.openProject');
