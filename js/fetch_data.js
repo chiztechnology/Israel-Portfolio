@@ -1,5 +1,17 @@
 const projects = [
   {
+    id: 14,
+    title: 'Car Hub',
+    subtitle: 'OPEN S.',
+    position: 'Front-end',
+    year: '2023',
+    description: 'Introducing CarHub, a sleek and intuitive car renting application designed for a seamless user experience. Built with Next.js and TypeScript, CarHub combines cutting-edge technology with robust functionality...',
+    skills: ['React', 'Nextjs', 'Typescript', 'Tailwind CSS', 'Git', 'Javascript'],
+    img: 'car renting app preview.jpg',
+    source_code: 'https://github.com/chiztechnology/car-renting',
+    live_version: 'https://car-renting-4slnt1vyl-chiztechnology.vercel.app/',
+  },
+  {
     id: 142134,
     title: 'Car renting app',
     subtitle: 'CAPSTONE',
