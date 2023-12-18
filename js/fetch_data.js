@@ -1,5 +1,17 @@
 const projects = [
   {
+    id: 12214,
+    title: 'PCV Academy',
+    subtitle: 'OPEN S.',
+    position: 'Full stack',
+    year: '2023',
+    description: 'PCV Academy, an online platform for registering students, posting public announcements and facilitating communication between school and parents...',
+    skills: ['React', 'Nextjs', 'Typescript', 'Tailwind CSS', 'Nodejs', 'Git', 'Javascript'],
+    img: 'PCV Academy.jpg',
+    source_code: 'https://github.com/chiztechnology/anzasport.git',
+    live_version: '#',
+  },
+  {
     id: 14,
     title: 'Car Hub',
     subtitle: 'OPEN S.',
