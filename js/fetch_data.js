@@ -9,7 +9,7 @@ const projects = [
     skills: ['React', 'Nextjs', 'Typescript', 'Tailwind CSS', 'Nodejs', 'Git', 'Javascript'],
     img: 'PCV Academy.jpg',
     source_code: 'https://github.com/chiztechnology/anzasport.git',
-    live_version: '#',
+    live_version: 'https://pcv-academy.onrender.com',
   },
   {
     id: 14,
