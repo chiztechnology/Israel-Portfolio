@@ -1,5 +1,17 @@
 const projects = [
   {
+    id: 120014,
+    title: 'UPDEV C.',
+    subtitle: 'OPEN S.',
+    position: 'Contributor',
+    year: '2023',
+    description: 'UPDEV Community is a Room for developers to connect, learn, share skills and knowledge and grow as a community...',
+    skills: ['React', 'Nextjs', 'Typescript', 'Nest JS', 'Nodejs', 'MongoDB', 'Javascript'],
+    img: 'Updev community.jpg',
+    source_code: 'https://github.com/UPTODATE-DEV/updevcommunity-frontend',
+    live_version: 'https://updevcommunity.com/en',
+  },
+  {
     id: 12214,
     title: 'PCV Academy',
     subtitle: 'OPEN S.',

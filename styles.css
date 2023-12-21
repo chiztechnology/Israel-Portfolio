@@ -71,7 +71,7 @@ body {
 }
 
 .main-div {
-  width: 100%;
+  width: 90%;
   height: 100vh;
   background: #fff;
 }
@@ -442,6 +442,14 @@ body {
   border: 1px solid #6070ff;
   border-radius: 8px;
   transition: background-color 1s, color 1s, ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: #396df2;
 }
 
 .get-resume-button:hover {
@@ -461,8 +469,8 @@ body {
 }
 
 .img-tech-stack {
-  height: 50px;
-  width: auto;
+  height: auto;
+  width: 50px;
 }
 
 .languages-header {
@@ -510,6 +518,7 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  margin-left: 15px;
 }
 
 .frameworks-container {
@@ -536,6 +545,7 @@ body {
   background-position: right;
   background-repeat: no-repeat;
   border-top-left-radius: 80px;
+  margin-top: 80px;
   width: 100%;
   height: 860px;
   display: flex;
@@ -690,15 +700,15 @@ body {
 
 @media only screen and (min-width: 768px) {
   body {
-    width: 100%;
+    width: 95%;
   }
 
   .main-div {
-    width: 100%;
+    width: 90%;
   }
 
   .main-div main {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -855,6 +865,7 @@ body {
   }
 
   .about-myself-sub-container {
+    margin-left: 15px;
     width: 447px;
   }
 
@@ -904,7 +915,7 @@ body {
   }
 
   .contact-section {
-    width: 100%;
+    width:100vh;
     align-items: center;
     background-image: url('img/contact\ form\ background\ shapes\ LARGE.svg');
   }
@@ -931,6 +942,11 @@ body {
 
   .middle-container {
     display: flex;
+  }
+
+  .img-tech-stack {
+    height: 50px;
+    width: auto;
   }
 }
 
