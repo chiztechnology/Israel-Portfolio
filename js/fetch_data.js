@@ -71,18 +71,6 @@ const projects = [
     source_code: 'https://github.com/chiztechnology/Todo-List',
     live_version: 'https://chiztechnology.github.io/Todo-List/dist/',
   },
-  {
-    id: 3,
-    title: 'Awesome Books',
-    subtitle: 'LST',
-    position: 'Back End Dev',
-    year: '2022',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'css', 'javascript'],
-    img: 'awesome-books-scr.png',
-    source_code: 'https://github.com/chiztechnology/Awesome-books',
-    live_version: 'https://chiztechnology.github.io/Awesome-books',
-  },
 ];
 
 function returnSkills(array) {
