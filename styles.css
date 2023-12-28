@@ -769,6 +769,10 @@ body {
     width: 52%;
   }
 
+  .each-language-text {
+    margin-left: 0;
+  }
+
   .intro-text {
     width: 80%;
     padding-bottom: 20px;
@@ -915,7 +919,7 @@ body {
   }
 
   .contact-section {
-    width:100%;
+    width: 100%;
     align-items: center;
     background-image: url('img/contact\ form\ background\ shapes\ LARGE.svg');
   }
