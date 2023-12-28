@@ -114,9 +114,7 @@ let wrapper = null;
 function showModal(obj) {
   if (wrapper !== null) {
     document.body.removeChild(wrapper);
-    // document.getElementById('modal').remove();
   }
-  // alert("clicked "
   wrapper = document.createElement('div');
   wrapper.innerHTML = `
   <div class="modal" id="modal">
@@ -179,13 +177,11 @@ function showModal(obj) {
   // // When the user clicks on <span> (x), close the modal
   span.onclick = () => {
     modal.style.display = 'none';
-    // document.getElementById('modal').remove();
   };
 
   window.onclick = (event) => {
     if (event.target === document.getElementById('modal')) {
       modal.style.display = 'none';
-      // document.getElementById('modal').remove();
     }
   };
 }
