@@ -700,15 +700,15 @@ body {
 
 @media only screen and (min-width: 768px) {
   body {
-    width: 95%;
+    width: 100%;
   }
 
   .main-div {
-    width: 90%;
+    width: 100%;
   }
 
   .main-div main {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -915,7 +915,7 @@ body {
   }
 
   .contact-section {
-    width:100vh;
+    width:100%;
     align-items: center;
     background-image: url('img/contact\ form\ background\ shapes\ LARGE.svg');
   }
