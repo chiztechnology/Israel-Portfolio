@@ -809,7 +809,7 @@ body {
     border-radius: 16px;
   }
 
-  .cards-work :nth-child() {
+  .works-section :nth-child(even) {
     flex-direction: row-reverse;
   }
 
