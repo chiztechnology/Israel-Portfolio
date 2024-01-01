@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -798,6 +798,11 @@ body {
     width: 100%;
   }
 
+  .works-section :nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+
   .cards-work {
     width: 95%;
     margin-top: 50px;
@@ -807,10 +812,6 @@ body {
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-  }
-
-  .works-section :nth-child(even) {
-    flex-direction: row-reverse;
   }
 
   .cards-work div {
