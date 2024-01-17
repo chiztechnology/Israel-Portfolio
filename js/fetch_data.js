@@ -1,5 +1,16 @@
 const projects = [
-  {
+    {
+    id: 1200166,
+    title: 'GrowChief',
+    subtitle: 'OPEN S.',
+    position: 'Frontend',
+    year: '2024',
+    description: 'GrowChief is an open source Landing page built in NextJS from a figma open source template available on the web. star the github repository and feel free to contribute',
+    skills: ['Figma', 'Nextjs', 'Typescript','Javascript'],
+    img: 'Growchief landing page.jpg',
+    source_code: 'https://github.com/chiztechnology/growchief/tree/landing-page',
+    live_version: 'https://growchief.onrender.com/',
+  },{
     id: 120014,
     title: 'UPDEV C.',
     subtitle: 'OPEN S.',
