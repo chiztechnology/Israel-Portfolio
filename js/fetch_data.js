@@ -1,4 +1,16 @@
 const projects = [
+  {
+    id: 1110166,
+    title: 'Landing Page',
+    subtitle: 'OPEN S.',
+    position: 'UI/UX Design',
+    year: '2022',
+    description: 'this is a free open source project to help developers develop their online presence and get started with figma tool. Feel free to check it out and contribute',
+    skills: ['Figma', 'Photoshop',],
+    img: 'landing-page_figma_presentation.png',
+    source_code: 'https://www.figma.com/design/36G8wFnB9QaGVjJ9I0K7Qt/Portfolio-Figma-design?node-id=0-1&t=Ml9KJd5jukgLDjbd-0',
+    live_version: 'https://www.figma.com/design/36G8wFnB9QaGVjJ9I0K7Qt/Portfolio-Figma-design?node-id=0-1&t=Ml9KJd5jukgLDjbd-0',
+  },
     {
     id: 1200166,
     title: 'GrowChief',
