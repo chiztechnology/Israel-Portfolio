@@ -1,5 +1,17 @@
 const projects = [
   {
+    id: 1110226,
+    title: 'Blog App',
+    subtitle: 'PREMIUM',
+    position: 'Full-stack',
+    year: '2024',
+    description: 'Introducing my latest project, a dynamic and user-friendly blog application designed to provide a seamless reading and writing experience. This app allows users to effortlessly create, share, and explore a wide range of articles. Built with modern web technologies, it features an intuitive interface, customizable URLs for each blog post, and robust metadata management for optimal SEO performance. Readers can easily share their favorite articles on social media platforms like LinkedIn, Twitter, Facebook, and WhatsApp. With a responsive design, the blog app ensures a great experience on both desktop and mobile devices. Check out the screenshot below to see it in action!',
+    skills: ['Nest', 'Hono server','Type ORM', 'Postgres','NextJS', 'Redux', 'Typescript'],
+    img: 'blessing-reformed-blog-cover.png',
+    source_code: 'https://github.com/chiztechnology/blessing-reformed-frontend',
+    live_version: 'https://www.blessingreformed.org/',
+  },
+  {
     id: 1110166,
     title: 'Landing Page',
     subtitle: 'OPEN S.',
