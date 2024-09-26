@@ -1,4 +1,30 @@
+// import { projects } from "./data";
+
+function returnSkills(array) {
+  let value = '';
+  for (let i = 0; i < array.length; i += 1) {
+    value += `<li class="skills-list first-element">
+      <div class="skills-container-badge">
+      <h4 class="skills-item">${array[i]}</h4>
+      </div>
+      </li>`;
+  }
+  return value;
+}
+
 const projects = [
+  {
+      id: 1110286,
+      title: 'Web App',
+      subtitle: 'PREMIUM',
+      position: 'Full-stack',
+      year: '2024',
+      description: 'DREXUS is a strategic digital marketing agency based in Kampala, Uganda that has dedicated their time to understanding what works — so you don\'t have to.',
+      skills: ['Nest', 'Type ORM', 'Postgres','NextJS', 'Redux', 'Typescript'],
+      img: 'drexus-cover-web-app.jpg',
+      source_code: 'https://github.com/chiztechnology/drexus-frontend',
+      live_version: 'https://drexus.chiztechnology.com/',
+    },
   {
     id: 1110226,
     title: 'Blog App',
@@ -108,17 +134,6 @@ const projects = [
   },
 ];
 
-function returnSkills(array) {
-  let value = '';
-  for (let i = 0; i < array.length; i += 1) {
-    value += `<li class="skills-list first-element">
-      <div class="skills-container-badge">
-      <h4 class="skills-item">${array[i]}</h4>
-      </div>
-      </li>`;
-  }
-  return value;
-}
 
 projects.forEach((p) => {
   document.getElementById('works-section').innerHTML += `<div class="cards-work">
